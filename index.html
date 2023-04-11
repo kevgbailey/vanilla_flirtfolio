@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlirtFolio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class = "header">
+        <div class = "logo-and-title">
+        <img src = "flirtfolio_logo.png" alt = "logo" width = "70" height = "67" id = "logo">
+        <h1 class = "menu-links" id = "home-link">FlirtFolio</h1>
+    </div>
+        <nav class = "nav">
+            <span class = "menu-links" id = "about-link">About</span>
+            <span class = "menu-links" id = "profile-link">Profile</span>
+        </nav>
+    </div>
+
+    <div class = "bodysection" id = "home">
+        <p id = "about-dot-page"></p>
+        <hr>
+        <div id = "people-container"></div>
+        <img src = "edit-icon.png" alt = "edit icon" width = "75" height = "75" id = "edit-icon">
+        </div>
+        <div id = "new-person-menu">
+            <img src = "x_mark.png" alt = "exit_button" width = "30" height = "30" id = "exit-button">
+            <form class = "name-form">
+                <label for = "firstName">First Name:</label>
+                <input type = "text" name = "firstName" id = "firstName">
+
+                <label for = "lastName">Last Name:</label>
+                <input type = "text" name = "lastName" id = "lastName">
+
+                <label for = "color">Dot Color:</label>
+                <input type = "color" id = "color" name = "color">
+
+                <input type = "submit" value = "Submit" id = "submit-button">
+
+            </form>
+        </div>
+    </div>
+
+    <div class = "bodysection" id = "profile" style = "padding-top: 90px;">
+        <div id = "profile-head">
+        <img src = "profile-image.jpg" alt = "profile-image" width = "100" height = "130" id = "profile-image">
+        <div id = "profile-info">
+        </div>
+        
+    </div>
+    <hr>
+    <div id = "profile-about-container">
+        <h2 class = "about-header">About Me: </h2>
+        <p id = "about-content"></p>
+    </div>
+
+    <hr>
+    <div id = "profile-interests-container">
+        <h2 class = "interests-header">Interests: </h2>
+        <ul id = "interests-list"></ul>
+    </div>
+    <hr>
+
+    </div>
+
+    <div class = "bodysection" id = "about">
+        <h2>About Flirtfolio</h2>
+        <section>
+            <img src = "happycouple.jpg" alt = "happy couple" width = "330" height = "230" id = "couple-image">
+            <p>Welcome to Flirtfolio, the innovative dating service designed to help you make the most of your dating life! We understand that dating can be exciting, but also overwhelming, especially when trying to manage multiple potential partners at the same time. That's why we created Flirtfolio - to simplify the dating process and help you focus on the people who matter most to you.</p>
+
+                <p> With Flirtfolio, you can easily keep track of all your dates, conversations, and interactions with the people you're currently dating. Our intuitive interface allows you to quickly see who you've been talking to and how your relationships are progressing. You can also set reminders for upcoming dates or events, and add notes about each match to help you remember important details.</p>
+                
+                <p> But Flirtfolio isn't just about organization - it's about helping you build meaningful connections with the people you're already dating. Our platform provides personalized recommendations based on your preferences and dating history, so you can discover new ways to connect and deepen your relationships. We also offer expert dating advice and resources to help you navigate the complex world of modern dating and build healthy, fulfilling relationships.</p>
+                
+                <p> At Flirtfolio, we're committed to helping you build stronger, more fulfilling relationships with the people you're already dating. Whether you're looking for new ways to connect with your partner or just trying to keep track of your dating life, we're here to support you every step of the way. So why not give Flirtfolio a try today and see how it can revolutionize your dating experience?</p>
+           </section>
+           <section>
+            <h3>Dating Videos</h3>
+            <iframe width = "400" height = "300" src = "https://www.youtube.com/embed/EU8RkqgvHLU"></iframe>
+            <iframe width = "400" height = "300" src = "https://www.youtube.com/embed/w3aNH8Ttay8" style = "float:right; margin-top: 10px;"></iframe>
+            <iframe width = "400" height = "300" src = "https://www.youtube.com/embed/ezTFYSan6cM" style = "margin-top: 10px;"></iframe>
+        </section>
+    </div>
+
+    
+    <div class = "footer">
+        <div class = "contact">
+        <p>Contact Information: </p>
+        <a href = "https://github.com/kevgbailey" class = "github-link">Github</a>
+        <p class = "email">/ kgbailey02@gmail.com</p>
+    </div>
+     <p>@2023</p>
+    </div>
+
+	<script src="index.js"></script>
+  </body>
+</html>

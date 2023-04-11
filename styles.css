@@ -1,0 +1,326 @@
+body{
+    background-color: #3E5C76;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-VariableFont_slnt-wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.header{
+    background-color: #152033;
+    color: white;
+    width: 100vw;
+    height: 50px;;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 5;
+    padding: 10px;
+    padding-left: 75px;
+    
+
+}
+
+.menu-links{
+    font-family: 'Inter';
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 5vw;
+}
+
+.menu-links:hover{
+    color: rgb(255, 130, 174) ;
+    font-weight: 100;
+}
+
+h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.bodysection{
+    background-color: white;
+    width: 80vw;
+    min-height: 1000px;
+    box-shadow: 0px 0px 500px 10px #1f1c2f;
+    color: rgb(51, 51, 51);
+    padding-top: 70px;
+    padding: 20px;
+}
+#people-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 15px;
+  }
+
+#home{
+    display: block;
+}
+
+#about{
+    display: none;
+}
+#profile{
+    display: none;
+    padding-top: 7-px;
+}
+.footer{
+    font-family: "Inter";
+    background-color: #152033;
+    height: 100px;
+    color: white;
+    padding-left: 50px;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+}
+
+.github-link{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.dotSpan{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border-radius: 17px;
+    margin-right: 5px;
+}
+
+.person-div{
+    font-family: 'Inter';
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 600px;
+}
+
+.person-div:hover{
+    background-color: rgb(255, 190, 213) ;
+    border-radius: 5px;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+}
+
+.person-div.leave{
+    animation-name:leave;
+    animation-duration: 0.8s;
+    
+}
+
+@keyframes leave{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+#edit-icon{
+    position: relative;
+    margin-top: 20px; /* adjust the margin value as needed */
+    float: right;
+    right: 20px;
+  }
+
+#edit-icon:hover{
+    background-color: rgb(255, 190, 213);
+    border-radius: 10px;
+}
+
+#new-person-menu{
+    font-family: "Inter";
+    padding: 30px;
+    padding-bottom: 50px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: -600px;
+    top: 80px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    transform: translateX(100%);
+    transition: right 0.3s east-out;
+    border-radius: 3px;
+}
+
+.submit-button{
+    width: 100px;
+}
+
+.submit-button:hover{
+    background-color: rgb(255, 190, 213);
+    border: none;
+}
+
+.submit-button:focus{
+    border: 2px black solid;
+}
+
+@keyframes comeIn{
+    0%{ right: -600px;}
+    100%{ right: 400px;}
+}
+
+
+#new-person-menu.show{
+    display: inline;
+    animation-name: comeIn;
+    animation-duration: .8s;
+    right: 400px;
+}
+
+.name-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+#exit-button:hover{
+    background-color: rgb(255, 190, 213);
+    border-radius: 10px;
+}
+
+input{
+    background-color: rgb(224, 224, 224);
+    height: 30px;
+    border-radius: 2px;
+    border: none;
+}
+
+input:focus{
+    border: 2px solid black;
+}
+
+#about{
+    font-family: 'Inter';
+    color: rgb(44, 44, 44);
+    padding: 20px;
+    padding-top: 70px;
+}
+
+#couple-image{
+    float: right;
+    right: 200px;
+    border-radius: 5px;
+    margin: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#home{
+    padding-top: 70px;
+}
+
+.logo-and-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    transform: rotate(25deg); 
+}
+
+#about-link, #profile-link{
+    font-weight: 100;
+    font-size: 30px;
+}
+
+#profile-image{
+    border-radius: 200px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-right: 30px;
+}
+
+#profile-head{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inter';
+    padding-bottom: 20px;
+}
+
+#profile-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-name{
+    font-size: 40px;
+    font-weight: 1000;
+    padding-bottom: 10px;
+    padding-top: 18px;
+}
+
+.age-and-location{
+    font-size: 20px;
+}
+
+#profile-about-container{
+font-family: "Inter";
+padding: 10px;
+}
+
+.about-header{
+  text-align: center;  
+}
+
+#profile-interests-container{
+    font-family: "Inter";
+    padding-bottom: 10px;
+}
+
+.interests-header{
+    text-align: center;
+}
+
+li{
+    padding-bottom: 7px;
+}
+
+.close-button{
+    background-color: rgb(255, 116, 116);
+    border: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 2px;
+    margin-left: 8px;
+    color: white;
+}
+
+.close-button:hover{
+    background-color:rgb(255, 69, 69);
+    border: 2px solid rgb(153, 57, 57)
+}
+
+#about-dot-page{
+    font-family: 'Inter';
+    padding: 10px;
+}

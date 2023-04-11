@@ -1,0 +1,64 @@
+{
+  "name": "John Doe",
+  "age": 28,
+  "gender": "Male",
+  "location": "New York City",
+  "interests": [
+    "Traveling",
+    "Hiking",
+    "Reading",
+    "Playing guitar",
+    "Singing"
+  ],
+  "about": "I'm an adventurous guy who loves to travel and explore new places. When I'm not on the road, I enjoy hiking in the mountains, reading a good book, or playing guitar. Looking for someone who shares my sense of adventure and can join me on my next trip!",
+    "people": [
+        {
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "color": "#748CAB",
+            "numOfDates": "4"
+        },
+        {
+            "firstName": "Test",
+            "lastName": "#2",
+            "color": "#B2BCC2",
+            "numOfDates": "4"
+        },
+        {
+            "firstName": "Test",
+            "lastName": "#3",
+            "color": "#faa0d3",
+            "numOfDates": "4"
+        },
+        {
+            "firstName": "Test",
+            "lastName": "#4",
+            "color": "#f9ff82",
+            "numOfDates": "4"
+        },
+        {
+            "firstName": "Test",
+            "lastName": "#5",
+            "color": "#152033",
+            "numOfDates": "4"
+        },
+        {
+            "firstName": "Test",
+            "lastName": "#6",
+            "color": "#748CAB",
+            "numOfDates": "4"
+        },
+        {
+            "firstName": "Test",
+            "lastName": "#7",
+            "color": "#f9ff82",
+            "numOfDates": "4"
+        },
+        {
+            "firstName": "Test",
+            "lastName": "#8",
+            "color": "#faa0d3",
+            "numOfDates": "4"
+        }
+    ]
+}
