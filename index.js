@@ -7,7 +7,11 @@ const profileContent = document.getElementById("profile");
 const newFormWindow = document.getElementById("new-person-menu");
 const aboutDotPage = document.getElementById('about-dot-page');
 
+//about link routing
 aboutLink.addEventListener('click', () =>{
+    aboutLink.style.color = "rgb(255, 130, 174)";
+    homeLink.style.color = 'white';
+    profileLink.style.color = 'white';
     newFormWindow.style.display = "none";
     newFormWindow.classList.remove("show");
     aboutContent.style.display = 'block';
@@ -15,14 +19,22 @@ aboutLink.addEventListener('click', () =>{
     profileContent.style.display = "none";
 })
 
+//home link routing
 homeLink.addEventListener('click', () =>{
-    
+    homeLink.style.color = "rgb(255, 130, 174)";
+    aboutLink.style.color = 'white';
+    profileLink.style.color = 'white';
     homeContent.style.display = 'block';
     aboutContent.style.display = "none";
     profileContent.style.display = "none";
 })
 
+
+//profile link routing
 profileLink.addEventListener('click', () =>{
+    profileLink.style.color = "rgb(255, 130, 174)";
+    homeLink.style.color = 'white';
+    aboutLink.style.color = 'white';
     newFormWindow.style.display = "none";
     newFormWindow.classList.remove("show");
     profileContent.style.display = 'block';
@@ -30,6 +42,7 @@ profileLink.addEventListener('click', () =>{
     homeContent.style.display = "none";
 })
 
+//importing and working the json user information
 fetch('user.json')
     .then(response => response.json())
     .then(data => {
@@ -49,7 +62,7 @@ fetch('user.json')
         const profileAboutContainer = document.getElementById('profile-about-container');
         const aboutContent = document.getElementById('about-content')
 
-        aboutDotPage.innerText = "Welcome " + name + " to Flirtfolio! This is the main page. Each person's name is shown, along with a colored dot that represents their chosen theme color. When hovering over a person's name or picture, an X icon appears in the top right corner. Clicking this icon removes the person from your list of matches. If you want to add a new person to your list, click the Edit button at the bottom of the page to load a new form."
+        aboutDotPage.innerText = "Welcome, " + name + " to Flirtfolio! This is the main page. Each person's name is shown, along with a colored dot that represents their chosen theme color. When hovering over a person's name, an X icon appears in the top right corner. Clicking this icon removes the person from your list of people. If you want to add a new person to your list, click the Edit button at the bottom of the page to load a new form."
 
         topProfileInfo.textContent = name;
         bottomProfileInfo.textContent = age + " / " + location;
@@ -109,6 +122,8 @@ fetch('user.json')
         })
     });
 
+
+//handling changing the person array using the x button and edit icon
 const xButton = document.getElementById("exit-button");
 const editIcon = document.getElementById("edit-icon");
 
@@ -123,7 +138,7 @@ editIcon.addEventListener("click", () => {
 })
 
 
-// submit handling
+// submit handling with the form
 
 const submitButton = document.getElementById('submit-button');
 
@@ -140,16 +155,15 @@ submitButton.addEventListener('click', (event) => {
         numOfDates: 0,
     };
 
-    // Get the current people array from the JSON file
+  
+    //adding to the json 
     fetch('user.json')
         .then(response => response.json())
         .then(data => {
             const people = data.people;
             
-            // Add the new person to the array
             people.push(newPerson);
             
-            // Write the updated array to the JSON file
             fetch('user.json', {
                 method: 'PUT',
                 headers: {
@@ -165,7 +179,6 @@ submitButton.addEventListener('click', (event) => {
                 console.error(error);
             });
 
-            // Add the new person to the page
             const container = document.getElementById('people-container');
             const personDiv = document.createElement('div');
             personDiv.classList.add('person-div');
