@@ -1,7 +1,5 @@
-/* I didnt really change anything too drastic because this project wasn't really graded on time. I didn't really know what to change when I started because I didn't recieve any feedback. */
-
 body{
-    background-color: #3E5C76;
+    background-color: #F2F7F2;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -10,13 +8,13 @@ body{
 
 @font-face {
     font-family: 'Inter';
-    src: url('Inter-VariableFont_slnt-wght.ttf') format('truetype');
+    src: url('Lato-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
 
 .header{
-    background-color: #152033;
+    background-color: #8E5572;
     color: white;
     width: 100vw;
     height: 60px;;
@@ -41,7 +39,6 @@ body{
 }
 
 .menu-links:hover{
-    color: rgb(255, 130, 174) ;
    animation-name: linkHover;
    animation-duration: 0.3s;
    animation-fill-mode: forwards;
@@ -49,7 +46,7 @@ body{
 }
 @keyframes linkHover{
     0%{background-color: none;}
-    100%{background-color: #424e62;}
+    100%{background-color: #F2F7F2; color: #8E5572}
 }
 
 h1{
@@ -64,15 +61,24 @@ h1{
     background-color: white;
     width: 80vw;
     min-height: 850px;
-    box-shadow: 0px 0px 500px 10px #1f1c2f;
+    box-shadow: 0px 0px 500px 10px #a6839f;
     color: rgb(51, 51, 51);
-    padding-top: 70px;
+    padding-top: 90px;
     padding: 20px;
 }
+
+#home.bodysection{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+
+
 #people-container {
     display: grid;
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
-    grid-gap: 15px;
+    grid-template-columns: repeat(auto, minmax(250px, 1fr));
+    grid-gap: 0px;
   }
 
 #home{
@@ -88,7 +94,7 @@ h1{
 }
 .footer{
     font-family: "Inter";
-    background-color: #152033;
+    background-color: #8E5572;
     height: 100px;
     color: white;
    
@@ -119,18 +125,18 @@ h1{
 .person-div{
     font-family: 'Inter';
     font-size: 20px;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 5px;
     width: max-content;
     display: flex;
     flex-direction: row;
     align-items: center;
     max-width: 600px;
-    height: 50px;
+    height: 40px;
 }
 
 .person-div:hover{
-    background-color: rgb(255, 190, 213) ;
+    background-color: rgb(212, 247, 255) ;
     border-radius: 5px;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
 }
@@ -150,11 +156,12 @@ h1{
     position: relative;
     margin-top: 20px; /* adjust the margin value as needed */
     float: left;
+    order: 3;
   }
 
 #edit-icon:hover{
     background-color: rgb(255, 190, 213);
-    border-radius: 10px;
+    border-radius: 400px;
 }
 
 #new-person-menu{
@@ -239,6 +246,7 @@ input:focus{
     border-radius: 5px;
     margin: 10px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 5;
 }
 
 #home{
@@ -249,6 +257,7 @@ input:focus{
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
 .nav{
@@ -300,6 +309,10 @@ font-family: "Inter";
 padding: 10px;
 padding-left: 0px;
 }
+hr{
+    margin: 10px;
+    margin-top: 40px;
+}
 
 
 #profile-interests-container{
@@ -329,7 +342,7 @@ li{
 #about-dot-page{
     font-family: 'Inter';
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 a{
@@ -357,7 +370,7 @@ a{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #8885a2;
+    background-color: #8b85a2;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -375,11 +388,11 @@ a{
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #422836;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #422836;
   }
   
   input:checked + .slider:before {
@@ -396,10 +409,6 @@ a{
     border-radius: 50%;
   }
 
-  .mobile-nav{
-    display: none;
-  }
-
   #hamburger-menu{
     display: none;
     padding: 10px;
@@ -409,6 +418,7 @@ a{
   .mobile-links{
     display: none;
   }
+
   #switch{
     display:flex;
     flex-direction: column;
@@ -417,34 +427,29 @@ a{
   .toggle-header{
     font-family: "Inter";
     font-size: 2vw;
-    padding-bottom: 5px;
    
   }
 
   .youtube-links{
-    width: 45vw;
-    height: 50vh;
+    width: 50vw;
+    height: 30vh;
+  }
+  img#couple-picture-main{
+    padding: 10px;
+    max-width: 400px;
+    border-radius: 15px;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
   }
 
-  img#couple-picture-main{
-    display: none;
-    border-radius: 20px;
+  .about-n-picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   @media(max-width: 768px){
-    .youtube-links{
-        width: 45vw;
-        height: 40vh;
-      }
-
-    #people-container {
-        display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-grid-auto-rows: minmax(100px, auto);
-grid-gap: 20px;
-    }
+    
     #home.bodysection{
-        margin-top: 15px;
         flex-direction: column;
         align-items: stretch;
     }
@@ -482,7 +487,7 @@ grid-gap: 20px;
     #about-mobile-link{
         font-family: 'Inter';
         color: white;
-        background-color:#283c5f;
+        background-color:#b87095;
         font-size: 30px;
         width: 100vw;
         align-content: center;
@@ -495,7 +500,7 @@ grid-gap: 20px;
         color: white;
         padding: 5px;
         font-size: 30px;
-        background-color:#385383;
+        background-color:#dd8ab5;
         width: 100vw;
         height: 60px;
         text-align: center;
@@ -505,7 +510,7 @@ grid-gap: 20px;
     @keyframes profileLinkHover{
         0%{}
         100%{background-color: white;
-            color:#3e5b8e}
+            color:#dd8ab5}
     }
     #profile-mobile-link:hover{
         animation-name: profileLinkHover;
@@ -516,27 +521,31 @@ grid-gap: 20px;
     @keyframes aboutLinkHover{
         0%{}
         100%{background-color: white;
-            color:#283c5f}
+            color:#b87095}
     }
     #about-mobile-link:hover{
         animation-name: aboutLinkHover;
         animation-fill-mode: forwards;
         animation-duration: .3s;
     }
-    #couple-image{
-        width: 200px;
-        height: 150px;
-    }
+    .youtube-links{
+        width: 45vw;
+        height: 40vh;
+      }
+
+   
+
     @media(max-width: 400px){
+        img#couple-picture-main{
+            padding: 10px;
+            max-width: 200px;
+            border-radius: 15px;
+            filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+          }
         .youtube-links{
             width: 55vw;
             height: 20vh;
           }
-        #new-person-menu{
-            width: 250px;
-            top: 100px;
-        }
-
         #home-link{
            font-size: 35px;
         }
@@ -551,6 +560,7 @@ grid-gap: 20px;
         }
         .header{
             padding: 14px;
+            width: max-content;
         }
         #couple-image{
             width: 150px;
@@ -560,5 +570,6 @@ grid-gap: 20px;
             justify-content: space-around;
         }
     }
-    
     }
+
+    

@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FlirtFolio</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css" id = "style-link">
   </head>
   <body>
     <div class = "header">
+        
+            <img src = "/img/Hamburger_icon.svg.png" alt = "menu icon" id = "hamburger-menu" height = "50" width = "50">
+            
         <div class = "logo-and-title">
         <img src = "/img/flirtfolio_logo.png" alt = "logo" width = "70" height = "67" id = "logo">
         <h1 class = "menu-links" id = "home-link">FlirtFolio</h1>
@@ -17,10 +20,24 @@
             <span class = "menu-links" id = "about-link">About</span>
             <span class = "menu-links" id = "profile-link">Profile</span>
         </nav>
+        <div id = switch>
+            <span class = "toggle-header">Theme Toggle</span>
+        <label class="switch">
+            <input type="checkbox" id = "theme-checkbox">
+            <span class="slider round" ></span>
+          </label>
+        </div>
     </div>
+  <span class = "mobile-links">
+       <div id = "about-mobile-link">About</div>
+        <div id = "profile-mobile-link">Profile</div>
+  </span>
 
     <div class = "bodysection" id = "home">
+        <div class = "about-n-picture">
         <p id = "about-dot-page"></p>
+        <img src = "/img/happycouple-main.jpg" alt = 'happycouple2' id = "couple-picture-main">
+    </div>
         <hr>
         <div id = "people-container"></div>
         <img src = "/img/edit-icon.png" alt = "edit icon" width = "75" height = "75" id = "edit-icon">
@@ -79,9 +96,9 @@
            </section>
            <section>
             <h3>Dating Videos</h3>
-            <iframe width = "400" height = "300" src = "https://www.youtube.com/embed/EU8RkqgvHLU"></iframe>
-            <iframe width = "400" height = "300" src = "https://www.youtube.com/embed/w3aNH8Ttay8" style = "float:right; margin-top: 10px;"></iframe>
-            <iframe width = "400" height = "300" src = "https://www.youtube.com/embed/ezTFYSan6cM" style = "margin-top: 10px;"></iframe>
+            <iframe width = "400" height = "300" src = "https://www.youtube.com/embed/EU8RkqgvHLU" class = "youtube-links"></iframe>
+            <iframe width = "400" height = "300" src = "https://www.youtube.com/embed/w3aNH8Ttay8" style = "float:right; margin-top: 10px;"class = "youtube-links"></iframe>
+            <iframe width = "400" height = "300" src = "https://www.youtube.com/embed/ezTFYSan6cM" style = "margin-top: 10px;"class = "youtube-links"></iframe>
         </section>
     </div>
 

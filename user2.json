@@ -1,0 +1,64 @@
+{
+    "name": "Jayne Doughe",
+    "age": 23,
+    "gender": "Female",
+    "location": "Vineyard, UT",
+    "interests": [
+      "Coding",
+      "Exercise",
+      "Volleyball",
+      "Napping",
+      "Piano"
+    ],
+    "about": "I am a down to earth girl that loves learning new things. I play volleyball for UCLA and I love working out.",
+      "people": [
+          {
+              "firstName": "John",
+              "lastName": "Doe",
+              "color": "#520027",
+              "numOfDates": "2"
+          },
+          {
+              "firstName": "Ryan",
+              "lastName": "Reynolds",
+              "color": "#476cff",
+              "numOfDates": "0"
+          },
+          {
+              "firstName": "Zac",
+              "lastName": "Efron",
+              "color": "#007027",
+              "numOfDates": "4"
+          },
+          {
+              "firstName": "Keanu",
+              "lastName": "Reeves",
+              "color": "#ffba7a",
+              "numOfDates": "3"
+          },
+          {
+              "firstName": "Tom",
+              "lastName": "Holland",
+              "color": "#707070",
+              "numOfDates": "1"
+          },
+          {
+              "firstName": "Brad",
+              "lastName": "Pitt",
+              "color": "#7a0e7c",
+              "numOfDates": "4"
+          },
+          {
+            "firstName": "Chris",
+            "lastName": "Pratt",
+            "color": "#9b83c9",
+            "numOfDates": "18"
+        },
+          {
+            "firstName": "Andrew",
+            "lastName": "Garfield",
+            "color": "#ffe642",
+            "numOfDates": "19"
+        }
+      ]
+  }
